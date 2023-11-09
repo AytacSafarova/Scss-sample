@@ -1,0 +1,38 @@
+/* variable */
+$boxColor:green;
+
+/* mixins */
+@mixin box-size {
+    width: 300px;
+    height: 300px;
+}
+@mixin display-style{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.container {
+    @include display-style;
+  background-color: aqua;
+  @media screen  and (max-width:1024px){
+    background-color: blanchedalmond;
+  }
+  @media screen  and (max-width:768px){
+    background-color:yellow;
+  }
+  .child {
+    @include box-size;
+    background-color: $boxColor;
+    h1 {
+      color: red;
+    }
+  }
+  .child-1{
+    @include box-size;
+    background-color: $boxColor;
+    p{
+        color: green;
+    }
+  }
+}

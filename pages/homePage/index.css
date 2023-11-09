@@ -1,0 +1,51 @@
+/* variable */
+/* mixins */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    background-color: blanchedalmond;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: yellow;
+  }
+}
+.container .child {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+.container .child h1 {
+  color: red;
+}
+@media screen and (max-width: 1024px) {
+  .container .child h1 {
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .child h1 {
+    color: aquamarine;
+  }
+}
+.container .child-1 {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+.container .child-1 p {
+  color: green;
+}
+
+.container .child {
+  background-color: antiquewhite;
+}
+.container .child h1 {
+  color: aquamarine;
+}

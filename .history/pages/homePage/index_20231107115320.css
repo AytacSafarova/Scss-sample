@@ -1,0 +1,11 @@
+.container {
+  background-color: aqua;
+  width: 700px;
+}
+.container .child {
+  width: 300px;
+  background-color: bisque;
+}
+.container .child h1 {
+  color: red;
+}

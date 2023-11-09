@@ -1,0 +1,32 @@
+/* variable */
+$boxColor:green;
+
+/* mixins */
+@mixin box-size {
+    width: 300px;
+    height: 300px;
+}
+@mixin display-styyle{
+    display:flex;
+    justify-contenht:center;
+    align-items:center;
+}
+.container {
+    @include display-styyle
+  background-color: aqua;
+  .child {
+    @include box-size;
+    background-color: $boxColor;
+    h1 {
+      color: red;
+    }
+  }
+  .child-1{
+    @include box-size;
+    background-color: $boxColor;
+    margin-top: 30px;
+    p{
+        color: green;
+    }
+  }
+}

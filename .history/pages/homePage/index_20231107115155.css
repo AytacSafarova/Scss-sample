@@ -1,0 +1,7 @@
+.container {
+  background-color: aqua;
+  width: 400px;
+}
+.container .child {
+  background-color: bisque;
+}

@@ -1,0 +1,22 @@
+$boxColor:green;
+
+.container {
+  background-color: aqua;
+  .child {
+    width: 300px;
+    height: 300px;
+    background-color: $boxColor;
+    h1 {
+      color: red;
+    }
+  }
+  .child-1{
+    width: 300px;
+    height: 300px;
+    background-color: $boxColor;
+    margin-top: 30px;
+    p{
+        color: green;
+    }
+  }
+}

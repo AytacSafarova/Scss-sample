@@ -1,0 +1,22 @@
+.container {
+  background-color: aqua;
+  width: 700px;
+  .child {
+    width: 300px;
+    background-color: bisque;
+    h1{
+        color: red;
+    }
+    p{
+        
+    }
+  }
+  .child-1{
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    p{
+        color: blue;
+    }
+  }
+}

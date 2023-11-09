@@ -1,0 +1,48 @@
+/* variables */
+$backgroundColor: red;
+$fontSize: 20px;
+
+/* mixins */
+@mixin display-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    @include display-style;
+  background-color: $backgroundColor;
+  width: 700px;
+@media screen and(max-width:1024px) {
+    width: 500px;
+    
+}
+  .child {
+    width: 300px;
+    background-color: bisque;
+    h1 {
+      color: red;
+      font-size: $fontSize;
+    }
+    p {
+      color: yellow;
+      font-size: $fontSize;
+    }
+  }
+  .child-1 {
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    p {
+      color: blue;
+      font-size: $fontSize;
+    }
+  }
+}
+.container-1 {
+    @include display-style;
+  width: 500px;
+  height: 400px;
+  margin-top: 40px;
+  background-color: $backgroundColor;
+}
